@@ -14,5 +14,5 @@ docker build -t react .
 docker run -d -it --name react -p 80:80 react
 
 #pushing the image to dockerhub:
-docker tag react $DOCKER_USERNAME/reactapp:cicd
-docker push $DOCKER_USERNAME/reactapp:cicd
+docker tag react $DOCKER_USERNAME/reactapp
+docker push $DOCKER_USERNAME/reactapp
