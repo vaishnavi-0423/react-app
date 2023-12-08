@@ -8,11 +8,11 @@ docker stop react
 docker rm react
 
 #building a image:
-docker build -t react_ci-cd .
+docker build -t react .
 
 #running a container from the created image:
-docker run -d -it --name react -p 80:80 react_ci-cd
+docker run -d -it --name react -p 80:80 react
 
 #pushing the image to dockerhub:
-docker tag react_ci-cd $DOCKER_USERNAME/react-app:ci-cd
-docker push $DOCKER_USERNAME/react-app:ci-cd
+docker tag react $DOCKER_USERNAME/react-app:cicd
+docker push $DOCKER_USERNAME/react-app:cicd
