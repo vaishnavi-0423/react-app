@@ -8,7 +8,7 @@ docker stop react
 docker rm react
 
 #building a image:
-docker build -t react-ci/cd .
+docker build -t react_ci-cd .
 
 #running a container from the created image:
 docker run -d -it --name react -p 80:80 react-ci/cd
