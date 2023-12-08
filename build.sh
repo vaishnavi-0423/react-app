@@ -11,8 +11,8 @@ docker rm react
 docker build -t react_ci-cd .
 
 #running a container from the created image:
-docker run -d -it --name react -p 80:80 react-ci/cd
+docker run -d -it --name react -p 80:80 react_ci-cd
 
 #pushing the image to dockerhub:
-docker tag react-ci/cd $DOCKER_USERNAME/react-app:ci-cd
+docker tag react_ci-cd $DOCKER_USERNAME/react-app:ci-cd
 docker push $DOCKER_USERNAME/react-app:ci-cd
