@@ -1,5 +1,6 @@
 #!/bin/bash
 
+docker login -u ravivarman46 -p dckr_pat_4RpB6x_mUNVKrFCLk2W5pqBnywE
 #login into DockerHub:
 docker login -u $DOCKER_USERNAME -p $DOCKER_PASS
 
